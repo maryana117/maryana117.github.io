@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BBcandels</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body class="contact">
+     <!-- header -->
+    <header class="contact-header">
+        <div class="logo-contact">BB CANDELS</div>
+        <!-- navigation -->
+        <nav class="contact-page">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home page</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="contact-content">
+        <div class="contact-left-part">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or special requests, we'd love to hear from you!</p>
+        <div class="contact-info">
+            <p><strong>Our Instagram:</strong> <a href="https://www.instagram.com/bb.candles/" target="_blank">@bb.candles</a></p>
+            <p><strong>Phone (Ukraine):</strong> +380 984210002 <br> +380937108125</p>
+            </div>
+        </div>
+
+        <!-- contact form -->
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer class="footer-contact">
+        <p>&copy; 2025 BB Candles. All rights reserved.</p>
+        </footer>
 </body>
 </html>

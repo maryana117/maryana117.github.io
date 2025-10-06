@@ -1,0 +1,448 @@
+/* CSS FOR HOME PAGE */
+
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body.home {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url('main.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+/* To make the background darker*/
+ .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Header */
+header {
+  background-color: #D394AB;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Section */
+.section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: Fraunces; 
+}
+
+.section p {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: Pragmatica;
+}
+
+/* Navigation */
+.home-page {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 3px solid rgba(200, 200, 200, 0.6);
+  border-radius: 30px;
+  padding: 20px; ;
+  background-color: rgba(80, 80, 80, 0.3);
+}
+
+.home-page ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.home-page a:hover {
+  font-size: 25px ;
+  color: darkslategrey;
+}
+
+/* To hide extra image */
+.background-container {
+  display: none;
+}
+
+/* ABOUT PAGE */
+
+body.about {
+    background-color: #536C7C;
+}
+
+.logo-about {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF5D9;
+}
+
+/* Header for about page */
+.about-header{
+  background-color: #182241;
+  padding: 15px 40px;
+  position: relative;
+  width: 100%;
+}
+/* Navigation bar for about page */
+.about-page ul{
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+    text-decoration: none;
+    list-style: none;
+}
+
+.about-page ul li a {
+    text-decoration: none;
+    color: #FFF5D9;
+    font-size: 18px;
+}
+
+.about-page ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content of the about page */
+.about-content{
+    color: #FFF5D9;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px; 
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.about-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #182241;
+}
+
+.about-content h2{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #182241;
+}
+
+.about-content ul {
+    list-style: none;
+}
+
+/* to use stars instead of dots */
+.about-content ul li::before {
+ content: "★";
+ color:#182241;
+}
+
+/* Flexbox for images on the about pages */
+.about-images {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: nowrap;
+   margin: 40px auto;
+   width: 100%;
+}
+
+.about-images img{
+    width: 200px;
+    height: 250px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #213C4E;
+    border-radius: 10px;
+}
+
+/* CONTACT US PAGE */
+
+body.contact {
+   background-color: #C2BFCB;
+}
+
+/* Header */
+.contact-header {
+  background-color: #7E7B46;
+  padding: 15px 40px;
+  position: relative;
+  width: 100%;
+}
+
+/* Logo */
+.logo-contact {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF5D9;
+}
+
+/* Navigation bar for contact page */
+.contact-page ul{
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+    text-decoration: none;
+    list-style: none;
+}
+
+.contact-page ul li a {
+    text-decoration: none;
+    color: #36302A;
+    font-size: 18px;
+}
+
+.contact-page ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content of the page */
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    color: #36302A;
+     margin: 0 auto; 
+    padding: 40px 10px; 
+    gap: 50px
+}
+
+.contact-content h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-family: Pragmatica;
+}
+
+.contact-content p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-left-part{
+    width: 50%;
+}
+
+.contact-info p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #B9A590;
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: #000;
+}
+
+/* Contact form */
+
+.contact-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    border-radius: 25px;
+    font-size: 19px;
+    background-color: transparent;
+    width: 100%;
+     padding: 15px 20px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #36302A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* SHOP PAGE */
+
+body.shop {
+    background-color: #D0CDC8;
+}
+
+.logo-shop{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF5D9;
+}
+
+/* Header for contact page */
+.shop-header{
+  background-color: #5E5858;
+  padding: 15px 40px;
+  position: relative;
+  width: 100%;
+}
+/* Navigation bar for contact page */
+.shop-page ul{
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+    text-decoration: none;
+    list-style: none;
+}
+
+.shop-page ul li a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-size: 18px;
+}
+
+.shop-page ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Products */
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    max-width: 1200px;
+    margin: 50px auto; 
+    gap: 30px;
+    text-align: center;
+}
+
+.description {
+    text-align: center; 
+    width: 100%;
+    font-size: 18px;    
+    margin-bottom: 30px; 
+    color: #5E5858;      
+}
+
+.product {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    width: 220px;     
+    height: 370px;   
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h3{
+  font-size: 16px;
+}
+
+.price{
+  font-size: 14px;
+}
+
+
+/* Footer for all pages */
+
+.footer-home{
+  background-color: #D394AB;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; 
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-shop{
+  background-color: #5E5858;
+  color: #FBFBFB;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; 
+  font-size: 14px;
+}
+
+.footer-contact {
+  background-color: #7E7B46;
+  color: #36302A;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; 
+  font-size: 14px;
+  position: absolute; 
+   bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-about {
+  background-color: #182241;
+  color: #FFF5D9;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; 
+  font-size: 14px;
+}
