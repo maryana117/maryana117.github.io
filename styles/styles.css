@@ -449,7 +449,7 @@ body.shop {
 
 
 
-/* Responsive styles for mobile devices */
+/* Responsive */
 @media (max-width: 600px) {
   header,
   .about-header,
