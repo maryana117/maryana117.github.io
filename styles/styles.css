@@ -15,8 +15,8 @@ body.home {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  background-attachment: scroll;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -467,6 +467,21 @@ body.shop {
     transform: none;
     width: 100%;
     padding: 10px 0;
+  }
+
+  body.home {
+    background-attachment: scroll; 
+    background-position: center top;
+  }
+
+  .overlay {
+    position: relative; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .home-page ul {
