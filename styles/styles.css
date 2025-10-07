@@ -446,3 +446,91 @@ body.shop {
   margin-top: 40px; 
   font-size: 14px;
 }
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  header,
+  .about-header,
+  .contact-header,
+  .shop-header {
+    padding: 10px 10px;
+    position: relative;
+  }
+
+ .section,
+  .home-page {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .home-page ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section h1,
+  .section p {
+    font-size: 18px;
+  }
+
+  .about-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-images img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5px;
+  }
+
+  .contact-left-part,
+  .contact-form {
+    width: 100%;
+  }
+
+  .shop-container {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+  }
+
+  .product {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-home,
+  .footer-contact,
+  .footer-about,
+  .footer-shop {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+
+
+
+
+
+
